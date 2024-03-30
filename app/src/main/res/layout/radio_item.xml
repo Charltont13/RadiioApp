@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="8dp"
+    android:paddingHorizontal="16dp"
+    android:background="#393E46"
+    android:layout_marginVertical="4dp"
+    android:elevation="4dp">
+
+    <ImageView
+        android:id="@+id/ivRadio"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_radio"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Station Name"
+        android:layout_toEndOf="@id/ivRadio"
+        android:layout_marginStart="16dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#FFD369"
+        android:layout_alignTop="@id/ivRadio"
+        android:fontFamily="sans-serif-medium"/>
+
+    <TextView
+        android:id="@+id/tvFrequency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Frequency"
+        android:layout_toEndOf="@id/ivRadio"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginStart="16dp"
+        android:textColor="#EEEEEE"
+        android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif"/>
+
+</RelativeLayout>
